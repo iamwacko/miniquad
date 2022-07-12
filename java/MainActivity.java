@@ -15,6 +15,7 @@ import android.view.SurfaceHolder;
 import android.view.MotionEvent;
 
 import android.content.Context;
+import android.content.Intent;
 
 import quad_native.QuadNative;
 
@@ -173,5 +174,9 @@ public class MainActivity extends Activity {
         //% MAIN_ACTIVITY_ON_PAUSE
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        //% MAIN_ACTIVITY_ON_ACTIVITY_RESULT
+    }
 }
 
